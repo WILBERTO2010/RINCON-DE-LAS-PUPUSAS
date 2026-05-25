@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón de las Pupusas | Gastronomía Salvadoreña</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h2><span>El Rincón de las</span> Pupusas</h2>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero" class="nav-item">Inicio</a>
+            <a href="#nosotros" class="nav-item">Nosotros</a>
+            <a href="#servicios" class="nav-item">Nuestro Menú</a>
+            <a href="#contacto" class="nav-item">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>El Auténtico Sabor Cuzcatleco</h1>
+            <p>Disfruta de las mejores pupusas hechas a mano, tamales y el toque único de nuestra tradición artesanal.</p>
+            <a href="#contacto" class="btn-cta">Reserva tu Mesa</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros container">
+        <div class="nosotros-text">
+            <h2>Nuestra Historia y Tradición</h2>
+            <div class="divider"></div>
+            <p>Nacimos con el deseo de mantener vivas las recetas de nuestras abuelas salvadoreñas. Cada ingrediente es seleccionado con amor, desde el maíz tierno hasta el quesillo original y el chicharrón bien sazonado. Queremos que cada bocado te transporte a las calles de El Salvador.</p>
+        </div>
+        <div class="nosotros-img">
+            <div class="placeholder-img"><i class="fas fa-utensils"></i></div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestras Especialidades</h2>
+            <div class="divider"></div>
+            
+            <div class="services-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-circle"></i></div>
+                    <h3>Pupusas Tradicionales</h3>
+                    <p>De revueltas, queso con loroco, frijol con queso y chicharrón. Servidas con curtido y salsa caliente.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Tamales de Gallina</h3>
+                    <p>Envueltos en hoja de plátano, con masa suave elaborada con el caldo original de gallina india.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Bebidas Típicas</h3>
+                    <p>Acompaña tu comida con un chocolate caliente, chilate, horchata de morro o una refrescante ensalada.</p>
+                </div>
+            </div>
+
+            <div class="dom-interaction">
+                <p>¿Tienes hambre? Haz clic abajo para agregar un antojo virtual a tu orden del día.</p>
+                <button id="btn-antojo" class="btn-secondary">¡Pedir Antojo Virtual!</button>
+                <div id="antojo-counter">Pupusas acumuladas en tu mente: <span id="counter-value">0</span> 🫓</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto container">
+        <div class="form-container">
+            <h2>Haz tu Reserva / Contáctanos</h2>
+            <p>Completa tus datos y te confirmaremos en minutos.</p>
+            
+            <form id="contact-form" novalidate>
+                <div class="input-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+                    <span class="error-msg" id="error-nombre">El nombre debe tener al menos 3 caracteres.</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com">
+                    <span class="error-msg" id="error-email">Ingresa un correo electrónico válido.</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="mensaje">¿Cuál es tu platillo favorito o mensaje?</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos cuántas pupusas quieres..."></textarea>
+                    <span class="error-msg" id="error-mensaje">El mensaje no puede estar vacío.</span>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Reserva</button>
+            </form>
+            <div id="form-success" class="success-msg">¡Tu mensaje ha sido enviado con éxito! Te responderemos pronto. 🇸🇻</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>&copy; <span id="year"></span> El Rincón de las Pupusas. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión por la comida salvadoreña.</p>
+            <div class="socials">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
